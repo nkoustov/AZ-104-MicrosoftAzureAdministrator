@@ -9,6 +9,13 @@
                 "description": "VM size"
             }
         },
+        "vmImage": {
+            "type": "string",
+            "defaultValue": "2019-Datacenter",
+            "metadata": {
+                "description": "VM image name / SKU"
+            }
+        },
         "vmName": {
             "type": "string",
             "defaultValue": "az104-06-vm",
@@ -79,7 +86,7 @@
                     "imageReference": {
                         "publisher": "MicrosoftWindowsServer",
                         "offer": "WindowsServer",
-                        "sku": "2019-Datacenter",
+                        "sku": "[parameters('vmImage')]",
                         "version": "latest"
                     },
                     "osDisk": {

@@ -5,9 +5,9 @@
         "vmSize": {
             "value": "Standard_B1s"
         },
-        "vmCount": {
-            "value": 2
-        },
+	   "vmImage": {
+            "value": "2019-Datacenter-Core-smalldisk"
+        },	
         "adminUsername": {
             "value": "Student"
         },
